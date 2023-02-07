@@ -1,0 +1,36 @@
+\hypertarget{structaxi__dma_1_1mm2s__curdesc__t}{}\doxysection{axi\+\_\+dma\+::mm2s\+\_\+curdesc\+\_\+t Struct Reference}
+\label{structaxi__dma_1_1mm2s__curdesc__t}\index{axi\_dma::mm2s\_curdesc\_t@{axi\_dma::mm2s\_curdesc\_t}}
+
+
+{\ttfamily \#include $<$Axi\+Dma.\+hpp$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned \mbox{\hyperlink{structaxi__dma_1_1mm2s__curdesc__t_a9881301725f64087ca00fe8098fb5a47}{rsvd\+\_\+5\+\_\+0}}\+: 6
+\item 
+unsigned \mbox{\hyperlink{structaxi__dma_1_1mm2s__curdesc__t_a1cef19fe26a2b26e0db06126c6298a8f}{current\+\_\+descriptor\+\_\+pointer}}\+: 26
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+MM2S DMA Current Descriptor Pointer Register 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structaxi__dma_1_1mm2s__curdesc__t_a1cef19fe26a2b26e0db06126c6298a8f}\label{structaxi__dma_1_1mm2s__curdesc__t_a1cef19fe26a2b26e0db06126c6298a8f}} 
+\index{axi\_dma::mm2s\_curdesc\_t@{axi\_dma::mm2s\_curdesc\_t}!current\_descriptor\_pointer@{current\_descriptor\_pointer}}
+\index{current\_descriptor\_pointer@{current\_descriptor\_pointer}!axi\_dma::mm2s\_curdesc\_t@{axi\_dma::mm2s\_curdesc\_t}}
+\doxysubsubsection{\texorpdfstring{current\_descriptor\_pointer}{current\_descriptor\_pointer}}
+{\footnotesize\ttfamily unsigned axi\+\_\+dma\+::mm2s\+\_\+curdesc\+\_\+t\+::current\+\_\+descriptor\+\_\+pointer}
+
+Indicates the pointer of the current descriptor being worked on. This register must contain a pointer to a valid descriptor prior to writing the TAILDESC\+\_\+\+PTR register. Otherwise, undefined results occur. When DMACR.\+RS is 1, CURDESC\+\_\+\+PTR becomes Read Only (RO) and is used to fetch the first descriptor. When the DMA Engine is running (DMACR.\+RS=1), CURDESC\+\_\+\+PTR registers are updated by AXI DMA to indicate the current descriptor being worked on. On error detection, CURDESC\+\_\+\+PTR is updated to reflect the descriptor associated with the detected error. Note\+: The register can only be written to by the CPU when the DMA Engine is Halted (DMACR.\+RS=0 and DMASR.\+Halted =1). At all other times, this register is Read Only (RO). Descriptors must be 16 word aligned, that is, 0x00, 0x40, 0x80 and others. Any other alignment has undefined results. \mbox{\Hypertarget{structaxi__dma_1_1mm2s__curdesc__t_a9881301725f64087ca00fe8098fb5a47}\label{structaxi__dma_1_1mm2s__curdesc__t_a9881301725f64087ca00fe8098fb5a47}} 
+\index{axi\_dma::mm2s\_curdesc\_t@{axi\_dma::mm2s\_curdesc\_t}!rsvd\_5\_0@{rsvd\_5\_0}}
+\index{rsvd\_5\_0@{rsvd\_5\_0}!axi\_dma::mm2s\_curdesc\_t@{axi\_dma::mm2s\_curdesc\_t}}
+\doxysubsubsection{\texorpdfstring{rsvd\_5\_0}{rsvd\_5\_0}}
+{\footnotesize\ttfamily unsigned axi\+\_\+dma\+::mm2s\+\_\+curdesc\+\_\+t\+::rsvd\+\_\+5\+\_\+0}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_axi_dma_8hpp}{Axi\+Dma.\+hpp}}\end{DoxyCompactItemize}
