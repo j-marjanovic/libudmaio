@@ -1,10 +1,8 @@
 var searchData=
 [
-  ['set_0',['set',['../class_axi_traffic_gen_lfsr.html#a7689461a613584fe9f91bb5d1d0e0e95',1,'AxiTrafficGenLfsr']]],
-  ['setlinkaxi_1',['setLinkAxi',['../classudmaio_1_1_uio_device_location.html#a06c0eea574248ba46b312b1f8cf71ed9',1,'udmaio::UioDeviceLocation']]],
-  ['setlinkxdma_2',['setLinkXdma',['../classudmaio_1_1_uio_device_location.html#a2878fdbf20284b4bb331c284ce7db63c',1,'udmaio::UioDeviceLocation']]],
-  ['signal_5fhandler_3',['signal_handler',['../axi__dma__demo_8cpp.html#a3b527c56ed133ee6815bfbc625e757af',1,'axi_dma_demo.cpp']]],
-  ['size_4',['size',['../classudmaio_1_1_reg_accessor_array.html#a488582212ef79d90b08842feb6ec876b',1,'udmaio::RegAccessorArray']]],
-  ['start_5',['start',['../class_uio_traffic_gen.html#ad56c154d7266ccfda625c0da9c985862',1,'UioTrafficGen::start()'],['../classudmaio_1_1_uio_axi_dma_if.html#a00bfa497dcdb7fba7c9d30ea0949675d',1,'udmaio::UioAxiDmaIf::start()']]],
-  ['stop_6',['stop',['../class_uio_traffic_gen.html#a91a7c2c7c803d3d2c2ec3ec704adcd23',1,'UioTrafficGen::stop()'],['../classudmaio_1_1_data_handler_abstract.html#aa85481c35139a0c2057b332826b32b90',1,'udmaio::DataHandlerAbstract::stop()'],['../classudmaio_1_1_data_handler_sync.html#a2a4c89eccf732b191817ec766bd54f82',1,'udmaio::DataHandlerSync::stop()']]]
+  ['operator_28_29_0',['operator()',['../class_data_handler_print.html#ae23acb144c1bfa02e7697187410d9d6b',1,'DataHandlerPrint::operator()()'],['../classudmaio_1_1_data_handler_abstract.html#a8b3ef758d72527ef0f7f3e4f1d9a068d',1,'udmaio::DataHandlerAbstract::operator()()'],['../classudmaio_1_1_data_handler_sync.html#af9ef2065d6dcda7af1a6fbf64f2f24ca',1,'udmaio::DataHandlerSync::operator()()']]],
+  ['operator_3c_3c_1',['operator&lt;&lt;',['../namespaceudmaio.html#af07b25049ad33f69ea022fd1b09a9b63',1,'udmaio::operator&lt;&lt;(std::ostream &amp;os, const FrameFormat::PixelFormat px_fmt)'],['../namespaceudmaio.html#ae5ffb5ed8410a34985e51fb5ce286aba',1,'udmaio::operator&lt;&lt;(std::ostream &amp;os, const FrameFormat &amp;frm_fmt)'],['../namespaceudmaio.html#ac25c553cf3256b7c5d7cd731d18251ff',1,'udmaio::operator&lt;&lt;(std::ostream &amp;os, const UioRegion &amp;buf_info)']]],
+  ['operator_3d_2',['operator=',['../classudmaio_1_1_concurrent_queue.html#ab86afd4013a112387ffe213a56fb1f05',1,'udmaio::ConcurrentQueue']]],
+  ['operator_3e_3e_3',['operator&gt;&gt;',['../namespaceudmaio.html#adcde5ee0e86bf537b18e3d7588443fc5',1,'udmaio']]],
+  ['operator_5b_5d_4',['operator[]',['../classudmaio_1_1_reg_accessor_array.html#a4b8a2afd9ba4baefa3f4e218bc0dc020',1,'udmaio::RegAccessorArray::operator[](uint32_t idx)'],['../classudmaio_1_1_reg_accessor_array.html#a6a2e8f0262742bcb598bb17eb2dc1c24',1,'udmaio::RegAccessorArray::operator[](uint32_t idx) const']]]
 ];

@@ -20,7 +20,7 @@ Collaboration diagram for Data\+Handler\+Print\+:
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_data_handler_print_abe3fafd624b77c9749f72d512cbe9232}{Data\+Handler\+Print}} (\mbox{\hyperlink{classudmaio_1_1_uio_axi_dma_if}{Uio\+Axi\+Dma\+If}} \&dma, \mbox{\hyperlink{classudmaio_1_1_uio_mem_sgdma}{Uio\+Mem\+Sgdma}} \&desc, \mbox{\hyperlink{classudmaio_1_1_dma_buffer_abstract}{Dma\+Buffer\+Abstract}} \&mem, unsigned int num\+\_\+bytes\+\_\+per\+\_\+beat, uint64\+\_\+t num\+\_\+bytes\+\_\+expected)
+\mbox{\hyperlink{class_data_handler_print_ace640eca6b337a665dc230356ea2429e}{Data\+Handler\+Print}} (\mbox{\hyperlink{classudmaio_1_1_uio_axi_dma_if}{Uio\+Axi\+Dma\+If}} \&dma, \mbox{\hyperlink{classudmaio_1_1_uio_mem_sgdma}{Uio\+Mem\+Sgdma}} \&desc, \mbox{\hyperlink{classudmaio_1_1_dma_buffer_abstract}{Dma\+Buffer\+Abstract}} \&mem, unsigned int num\+\_\+bytes\+\_\+per\+\_\+beat, uint64\+\_\+t num\+\_\+bytes\+\_\+expected, bool rt\+\_\+prio)
 \item 
 std\+::pair$<$ uint64\+\_\+t, uint64\+\_\+t $>$ \mbox{\hyperlink{class_data_handler_print_ae23acb144c1bfa02e7697187410d9d6b}{operator()}} ()
 \end{DoxyCompactItemize}
@@ -34,8 +34,6 @@ void \mbox{\hyperlink{class_data_handler_print_aa3bc74f37259997bd5c538f4eddedf9a
 \item 
 std\+::optional$<$ \mbox{\hyperlink{class_axi_traffic_gen_lfsr}{Axi\+Traffic\+Gen\+Lfsr}} $>$ \mbox{\hyperlink{class_data_handler_print_aae9109b528b03fb6c458d708d92734de}{lfsr}}
 \item 
-boost\+::log\+::sources\+::severity\+\_\+logger\+\_\+mt$<$ blt\+::severity\+\_\+level $>$ \mbox{\hyperlink{class_data_handler_print_a96c5faa0653dbde9612192c30445f1be}{\+\_\+slg}}
-\item 
 uint64\+\_\+t \mbox{\hyperlink{class_data_handler_print_a9cb0bb441af9f111f8570c3c69e39321}{\+\_\+counter\+\_\+ok}}
 \item 
 uint64\+\_\+t \mbox{\hyperlink{class_data_handler_print_a58859aa288fa457de477dc4415d88de2}{\+\_\+counter\+\_\+total}}
@@ -46,17 +44,18 @@ const uint64\+\_\+t \mbox{\hyperlink{class_data_handler_print_a58230ecb389f06ec1
 \item 
 uint64\+\_\+t \mbox{\hyperlink{class_data_handler_print_a5e550f148177832ff116f8aececc28ab}{\+\_\+num\+\_\+bytes\+\_\+rcvd}}
 \end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
 
 
 \doxysubsection{Detailed Description}
 Data\+Handler implementation that checks LFSR data and prints status / stats. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_data_handler_print_abe3fafd624b77c9749f72d512cbe9232}\label{class_data_handler_print_abe3fafd624b77c9749f72d512cbe9232}} 
+\mbox{\Hypertarget{class_data_handler_print_ace640eca6b337a665dc230356ea2429e}\label{class_data_handler_print_ace640eca6b337a665dc230356ea2429e}} 
 \index{DataHandlerPrint@{DataHandlerPrint}!DataHandlerPrint@{DataHandlerPrint}}
 \index{DataHandlerPrint@{DataHandlerPrint}!DataHandlerPrint@{DataHandlerPrint}}
 \doxysubsubsection{\texorpdfstring{DataHandlerPrint()}{DataHandlerPrint()}}
-{\footnotesize\ttfamily Data\+Handler\+Print\+::\+Data\+Handler\+Print (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classudmaio_1_1_uio_axi_dma_if}{Uio\+Axi\+Dma\+If}} \&}]{dma,  }\item[{\mbox{\hyperlink{classudmaio_1_1_uio_mem_sgdma}{Uio\+Mem\+Sgdma}} \&}]{desc,  }\item[{\mbox{\hyperlink{classudmaio_1_1_dma_buffer_abstract}{Dma\+Buffer\+Abstract}} \&}]{mem,  }\item[{unsigned int}]{num\+\_\+bytes\+\_\+per\+\_\+beat,  }\item[{uint64\+\_\+t}]{num\+\_\+bytes\+\_\+expected }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+{\footnotesize\ttfamily Data\+Handler\+Print\+::\+Data\+Handler\+Print (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classudmaio_1_1_uio_axi_dma_if}{Uio\+Axi\+Dma\+If}} \&}]{dma,  }\item[{\mbox{\hyperlink{classudmaio_1_1_uio_mem_sgdma}{Uio\+Mem\+Sgdma}} \&}]{desc,  }\item[{\mbox{\hyperlink{classudmaio_1_1_dma_buffer_abstract}{Dma\+Buffer\+Abstract}} \&}]{mem,  }\item[{unsigned int}]{num\+\_\+bytes\+\_\+per\+\_\+beat,  }\item[{uint64\+\_\+t}]{num\+\_\+bytes\+\_\+expected,  }\item[{bool}]{rt\+\_\+prio }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 
 
@@ -118,12 +117,6 @@ Implements \mbox{\hyperlink{classudmaio_1_1_data_handler_abstract_ac61900afc81ad
 \index{\_num\_bytes\_rcvd@{\_num\_bytes\_rcvd}!DataHandlerPrint@{DataHandlerPrint}}
 \doxysubsubsection{\texorpdfstring{\_num\_bytes\_rcvd}{\_num\_bytes\_rcvd}}
 {\footnotesize\ttfamily uint64\+\_\+t Data\+Handler\+Print\+::\+\_\+num\+\_\+bytes\+\_\+rcvd\hspace{0.3cm}{\ttfamily [private]}}
-
-\mbox{\Hypertarget{class_data_handler_print_a96c5faa0653dbde9612192c30445f1be}\label{class_data_handler_print_a96c5faa0653dbde9612192c30445f1be}} 
-\index{DataHandlerPrint@{DataHandlerPrint}!\_slg@{\_slg}}
-\index{\_slg@{\_slg}!DataHandlerPrint@{DataHandlerPrint}}
-\doxysubsubsection{\texorpdfstring{\_slg}{\_slg}}
-{\footnotesize\ttfamily boost\+::log\+::sources\+::severity\+\_\+logger\+\_\+mt$<$blt\+::severity\+\_\+level$>$ Data\+Handler\+Print\+::\+\_\+slg\hspace{0.3cm}{\ttfamily [private]}}
 
 \mbox{\Hypertarget{class_data_handler_print_aae9109b528b03fb6c458d708d92734de}\label{class_data_handler_print_aae9109b528b03fb6c458d708d92734de}} 
 \index{DataHandlerPrint@{DataHandlerPrint}!lfsr@{lfsr}}

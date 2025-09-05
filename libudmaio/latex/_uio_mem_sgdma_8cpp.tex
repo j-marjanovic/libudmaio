@@ -1,21 +1,33 @@
 \hypertarget{_uio_mem_sgdma_8cpp}{}\doxysection{Uio\+Mem\+Sgdma.\+cpp File Reference}
 \label{_uio_mem_sgdma_8cpp}\index{UioMemSgdma.cpp@{UioMemSgdma.cpp}}
 {\ttfamily \#include \char`\"{}udmaio/\+Uio\+Mem\+Sgdma.\+hpp\char`\"{}}\newline
-{\ttfamily \#include $<$bitset$>$}\newline
+{\ttfamily \#include $<$cstddef$>$}\newline
+{\ttfamily \#include $<$cstdint$>$}\newline
+{\ttfamily \#include $<$iterator$>$}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include $<$stdexcept$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include \char`\"{}udmaio/\+Dma\+Buffer\+Abstract.\+hpp\char`\"{}}\newline
+{\ttfamily \#include $<$boost/log/sources/severity\+\_\+feature.\+hpp$>$}\newline
 Include dependency graph for Uio\+Mem\+Sgdma.\+cpp\+:
 % FIG 0
 \doxysubsection*{Namespaces}
 \begin{DoxyCompactItemize}
 \item 
+namespace \mbox{\hyperlink{namespacestd}{std}}
+\begin{DoxyCompactList}\small\item\em STL namespace. \end{DoxyCompactList}\item 
 namespace \mbox{\hyperlink{namespaceudmaio}{udmaio}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
-\#define \mbox{\hyperlink{_uio_mem_sgdma_8cpp_a10f02af0fffc41701f4534f89305b157}{BLI}}~BOOST\+\_\+\+LOG\+\_\+\+SEV(\+\_\+slg, blt\+::severity\+\_\+level\+::info) $<$$<$ \+\_\+log\+\_\+name() $<$$<$ \char`\"{}\+: \char`\"{}
+\#define \mbox{\hyperlink{_uio_mem_sgdma_8cpp_a10f02af0fffc41701f4534f89305b157}{BLI}}~BOOST\+\_\+\+LOG\+\_\+\+SEV(\+\_\+lg, bls\+::info) $<$$<$ \char`\"{}\char`\"{}
 \end{DoxyCompactItemize}
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
+\item 
+ostream \& \mbox{\hyperlink{namespacestd_a5edd63f583ab9a0606363ecff9bfff6d}{std\+::operator$<$$<$}} (ostream \&os, const vector$<$ size\+\_\+t $>$ \&vec)
 \item 
 std\+::ostream \& \mbox{\hyperlink{namespaceudmaio_ac25c553cf3256b7c5d7cd731d18251ff}{udmaio\+::operator$<$$<$}} (std\+::ostream \&os, const Uio\+Region \&buf\+\_\+info)
 \end{DoxyCompactItemize}
@@ -26,5 +38,5 @@ std\+::ostream \& \mbox{\hyperlink{namespaceudmaio_ac25c553cf3256b7c5d7cd731d182
 \index{UioMemSgdma.cpp@{UioMemSgdma.cpp}!BLI@{BLI}}
 \index{BLI@{BLI}!UioMemSgdma.cpp@{UioMemSgdma.cpp}}
 \doxysubsubsection{\texorpdfstring{BLI}{BLI}}
-{\footnotesize\ttfamily \#define BLI~BOOST\+\_\+\+LOG\+\_\+\+SEV(\+\_\+slg, blt\+::severity\+\_\+level\+::info) $<$$<$ \+\_\+log\+\_\+name() $<$$<$ \char`\"{}\+: \char`\"{}}
+{\footnotesize\ttfamily \#define BLI~BOOST\+\_\+\+LOG\+\_\+\+SEV(\+\_\+lg, bls\+::info) $<$$<$ \char`\"{}\char`\"{}}
 

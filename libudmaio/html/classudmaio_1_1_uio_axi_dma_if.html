@@ -101,7 +101,6 @@ $(document).ready(function(){initNavTree('classudmaio_1_1_uio_axi_dma_if.html','
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="classudmaio_1_1_uio_axi_dma_if-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">udmaio::UioAxiDmaIf Class Reference</div></div>
 </div><!--header-->
@@ -120,53 +119,44 @@ Inheritance diagram for udmaio::UioAxiDmaIf:</div>
 <div class="dynheader">
 Collaboration diagram for udmaio::UioAxiDmaIf:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classudmaio_1_1_uio_axi_dma_if__coll__graph.svg" width="328" height="199"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classudmaio_1_1_uio_axi_dma_if__coll__graph.svg" width="319" height="362"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:abd92168c528e68ee5ba19a88b0bbc271"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classudmaio_1_1_uio_axi_dma_if.html#abd92168c528e68ee5ba19a88b0bbc271">UioAxiDmaIf</a> (<a class="el" href="structudmaio_1_1_uio_device_info.html">UioDeviceInfo</a> dev_loc)</td></tr>
-<tr class="separator:abd92168c528e68ee5ba19a88b0bbc271"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff01d963fa85b9a234d2d90be6a63011"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classudmaio_1_1_uio_axi_dma_if.html#aff01d963fa85b9a234d2d90be6a63011">UioAxiDmaIf</a> (<a class="el" href="classudmaio_1_1_uio_device_location.html">UioDeviceLocation</a> dev_loc)</td></tr>
+<tr class="separator:aff01d963fa85b9a234d2d90be6a63011"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00bfa497dcdb7fba7c9d30ea0949675d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classudmaio_1_1_uio_axi_dma_if.html#a00bfa497dcdb7fba7c9d30ea0949675d">start</a> (uintptr_t start_desc)</td></tr>
 <tr class="memdesc:a00bfa497dcdb7fba7c9d30ea0949675d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure and start the AXI DMA controller.  <a href="classudmaio_1_1_uio_axi_dma_if.html#a00bfa497dcdb7fba7c9d30ea0949675d">More...</a><br /></td></tr>
 <tr class="separator:a00bfa497dcdb7fba7c9d30ea0949675d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12ad2b773b16b735c3fe9e8a24fe7139"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classudmaio_1_1_uio_axi_dma_if.html#a12ad2b773b16b735c3fe9e8a24fe7139">clear_interrupt</a> ()</td></tr>
-<tr class="memdesc:a12ad2b773b16b735c3fe9e8a24fe7139"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for interrupt and acknowledge it.  <a href="classudmaio_1_1_uio_axi_dma_if.html#a12ad2b773b16b735c3fe9e8a24fe7139">More...</a><br /></td></tr>
-<tr class="separator:a12ad2b773b16b735c3fe9e8a24fe7139"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a459c4de408c255f2e9927ad7a8dc3466"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classudmaio_1_1_uio_axi_dma_if.html#a459c4de408c255f2e9927ad7a8dc3466">get_fd_int</a> () const</td></tr>
-<tr class="memdesc:a459c4de408c255f2e9927ad7a8dc3466"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get file descriptor of interrupt event file.  <a href="classudmaio_1_1_uio_axi_dma_if.html#a459c4de408c255f2e9927ad7a8dc3466">More...</a><br /></td></tr>
-<tr class="separator:a459c4de408c255f2e9927ad7a8dc3466"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52177a071c9c29e2ed57a6da50d12ebd"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classudmaio_1_1_uio_axi_dma_if.html#a52177a071c9c29e2ed57a6da50d12ebd">get_curr_desc</a> ()</td></tr>
+<tr class="separator:a52177a071c9c29e2ed57a6da50d12ebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cbc86036333f77a67e79a1077618a56"><td class="memItemLeft" align="right" valign="top">std::tuple&lt; uint32_t, <a class="el" href="structaxi__dma_1_1s2mm__dmasr__t.html">axi_dma::s2mm_dmasr_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classudmaio_1_1_uio_axi_dma_if.html#a1cbc86036333f77a67e79a1077618a56">clear_interrupt</a> ()</td></tr>
+<tr class="memdesc:a1cbc86036333f77a67e79a1077618a56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for interrupt and acknowledge it.  <a href="classudmaio_1_1_uio_axi_dma_if.html#a1cbc86036333f77a67e79a1077618a56">More...</a><br /></td></tr>
+<tr class="separator:a1cbc86036333f77a67e79a1077618a56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5917c7c9808afd9a4271759e60e17ca6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classudmaio_1_1_uio_axi_dma_if.html#a5917c7c9808afd9a4271759e60e17ca6">check_for_errors</a> ()</td></tr>
 <tr class="memdesc:a5917c7c9808afd9a4271759e60e17ca6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check status register and log any errors.  <a href="classudmaio_1_1_uio_axi_dma_if.html#a5917c7c9808afd9a4271759e60e17ca6">More...</a><br /></td></tr>
 <tr class="separator:a5917c7c9808afd9a4271759e60e17ca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02d6527c841f5766b616ce7f8f2f25c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classudmaio_1_1_uio_axi_dma_if.html#a02d6527c841f5766b616ce7f8f2f25c0">dump_status</a> ()</td></tr>
+<tr class="memdesc:a02d6527c841f5766b616ce7f8f2f25c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dump all status register flags in the log.  <a href="classudmaio_1_1_uio_axi_dma_if.html#a02d6527c841f5766b616ce7f8f2f25c0">More...</a><br /></td></tr>
+<tr class="separator:a02d6527c841f5766b616ce7f8f2f25c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6756aeb5ca3c013d0c4be22e3d573963"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classudmaio_1_1_uio_axi_dma_if.html#a6756aeb5ca3c013d0c4be22e3d573963">arm_interrupt</a> ()</td></tr>
 <tr class="separator:a6756aeb5ca3c013d0c4be22e3d573963"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classudmaio_1_1_uio_if"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classudmaio_1_1_uio_if')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classudmaio_1_1_uio_if.html">udmaio::UioIf</a></td></tr>
-<tr class="memitem:a9eab72c96cad2df0a438ef2fcf685e2e inherit pub_methods_classudmaio_1_1_uio_if"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classudmaio_1_1_uio_if.html#a9eab72c96cad2df0a438ef2fcf685e2e">UioIf</a> (<a class="el" href="structudmaio_1_1_uio_device_info.html">UioDeviceInfo</a> dev)</td></tr>
-<tr class="memdesc:a9eab72c96cad2df0a438ef2fcf685e2e inherit pub_methods_classudmaio_1_1_uio_if"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the <a class="el" href="classudmaio_1_1_uio_if.html" title="Base class for UIO interfaces.">UioIf</a> from a <a class="el" href="structudmaio_1_1_uio_device_info.html" title="Data needed to construct an UioIf; contains information how to connect to a device.">UioDeviceInfo</a>.  <a href="classudmaio_1_1_uio_if.html#a9eab72c96cad2df0a438ef2fcf685e2e">More...</a><br /></td></tr>
-<tr class="separator:a9eab72c96cad2df0a438ef2fcf685e2e inherit pub_methods_classudmaio_1_1_uio_if"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a383688e40d0c62f7a46a8ab37e9de4ec inherit pub_methods_classudmaio_1_1_uio_if"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classudmaio_1_1_uio_if.html#a383688e40d0c62f7a46a8ab37e9de4ec">UioIf</a> (std::string name, <a class="el" href="classudmaio_1_1_uio_device_location.html">UioDeviceLocation</a> dev_loc)</td></tr>
+<tr class="separator:a383688e40d0c62f7a46a8ab37e9de4ec inherit pub_methods_classudmaio_1_1_uio_if"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abecdae6ece38df3bdd0a1797787a2487 inherit pub_methods_classudmaio_1_1_uio_if"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classudmaio_1_1_uio_if.html#abecdae6ece38df3bdd0a1797787a2487">~UioIf</a> ()</td></tr>
 <tr class="separator:abecdae6ece38df3bdd0a1797787a2487 inherit pub_methods_classudmaio_1_1_uio_if"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a5627fbf50a2475b9288e0a464d5f1672"><td class="memItemLeft" align="right" valign="top">virtual const std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classudmaio_1_1_uio_axi_dma_if.html#a5627fbf50a2475b9288e0a464d5f1672">_log_name</a> () const override</td></tr>
-<tr class="separator:a5627fbf50a2475b9288e0a464d5f1672"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_structaxi__dma_1_1block__template"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_structaxi__dma_1_1block__template')"><img src="closed.png" alt="-"/>&#160;Private Member Functions inherited from <a class="el" href="structaxi__dma_1_1block__template.html">axi_dma::block_template&lt; R_array_acc, R_acc_arg &gt;</a></td></tr>
-<tr class="memitem:a053033be75233e467c81b80d073b21d5 inherit pub_methods_structaxi__dma_1_1block__template"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaxi__dma_1_1block__template.html#a053033be75233e467c81b80d073b21d5">block_template</a> (R_acc_arg arg)</td></tr>
-<tr class="separator:a053033be75233e467c81b80d073b21d5 inherit pub_methods_structaxi__dma_1_1block__template"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2eaafeb3146b24ee7ef1e9978a9482cf inherit pub_methods_classudmaio_1_1_uio_if"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classudmaio_1_1_uio_if.html#a2eaafeb3146b24ee7ef1e9978a9482cf">get_fd_int</a> () const</td></tr>
+<tr class="memdesc:a2eaafeb3146b24ee7ef1e9978a9482cf inherit pub_methods_classudmaio_1_1_uio_if"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get file descriptor of interrupt event file.  <a href="classudmaio_1_1_uio_if.html#a2eaafeb3146b24ee7ef1e9978a9482cf">More...</a><br /></td></tr>
+<tr class="separator:a2eaafeb3146b24ee7ef1e9978a9482cf inherit pub_methods_classudmaio_1_1_uio_if"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae46944a87f194f48d10157becb5624f1 inherit pub_methods_classudmaio_1_1_uio_if"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classudmaio_1_1_uio_if.html#ae46944a87f194f48d10157becb5624f1">enable_debug</a> (bool enable)</td></tr>
+<tr class="separator:ae46944a87f194f48d10157becb5624f1 inherit pub_methods_classudmaio_1_1_uio_if"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_classudmaio_1_1_uio_if"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classudmaio_1_1_uio_if')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classudmaio_1_1_uio_if.html">udmaio::UioIf</a></td></tr>
-<tr class="memitem:a2522757cf427921bc727063a683ae367 inherit pro_methods_classudmaio_1_1_uio_if"><td class="memItemLeft" align="right" valign="top">volatile uint32_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classudmaio_1_1_uio_if.html#a2522757cf427921bc727063a683ae367">_reg_ptr32</a> (uint32_t offs) const</td></tr>
-<tr class="separator:a2522757cf427921bc727063a683ae367 inherit pro_methods_classudmaio_1_1_uio_if"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93c970c96f0bfa594eb4fd92d94e4ed3 inherit pro_methods_classudmaio_1_1_uio_if"><td class="memItemLeft" align="right" valign="top">volatile uint64_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classudmaio_1_1_uio_if.html#a93c970c96f0bfa594eb4fd92d94e4ed3">_reg_ptr64</a> (uint32_t offs) const</td></tr>
-<tr class="separator:a93c970c96f0bfa594eb4fd92d94e4ed3 inherit pro_methods_classudmaio_1_1_uio_if"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d8ff52701b750c68bb891529470768f inherit pro_methods_classudmaio_1_1_uio_if"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a9d8ff52701b750c68bb891529470768f inherit pro_methods_classudmaio_1_1_uio_if"><td class="memTemplItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classudmaio_1_1_uio_if.html#a9d8ff52701b750c68bb891529470768f">reg_to_raw</a> (T data)</td></tr>
-<tr class="separator:a9d8ff52701b750c68bb891529470768f inherit pro_methods_classudmaio_1_1_uio_if"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a7d60c6438b2d90e204bb5a456ed755 inherit pro_methods_classudmaio_1_1_uio_if"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classudmaio_1_1_uio_if.html#a9a7d60c6438b2d90e204bb5a456ed755">_rd32</a> (uint32_t offs) const</td></tr>
 <tr class="separator:a9a7d60c6438b2d90e204bb5a456ed755 inherit pro_methods_classudmaio_1_1_uio_if"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a0b7afd8ae6ca5e4a332e6a43b64ebb inherit pro_methods_classudmaio_1_1_uio_if"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classudmaio_1_1_uio_if.html#a9a0b7afd8ae6ca5e4a332e6a43b64ebb">_rd64</a> (uint32_t offs) const</td></tr>
@@ -175,29 +165,39 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a493e161ddcaa28c256f075f45e687391 inherit pro_methods_classudmaio_1_1_uio_if"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0287ff2c15a31b97b78c57e4eeb802e8 inherit pro_methods_classudmaio_1_1_uio_if"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classudmaio_1_1_uio_if.html#a0287ff2c15a31b97b78c57e4eeb802e8">_wr64</a> (uint32_t offs, uint64_t data)</td></tr>
 <tr class="separator:a0287ff2c15a31b97b78c57e4eeb802e8 inherit pro_methods_classudmaio_1_1_uio_if"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f8fc60947d75be15927a2310658cb03 inherit pro_methods_classudmaio_1_1_uio_if"><td class="memItemLeft" align="right" valign="top">std::vector&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classudmaio_1_1_uio_if.html#a5f8fc60947d75be15927a2310658cb03">read_bulk</a> (uint32_t offs, uint32_t size)</td></tr>
+<tr class="separator:a5f8fc60947d75be15927a2310658cb03 inherit pro_methods_classudmaio_1_1_uio_if"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b8e830656fa56ce4611cdc9ab0eda25 inherit pro_methods_classudmaio_1_1_uio_if"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classudmaio_1_1_uio_if.html#a5b8e830656fa56ce4611cdc9ab0eda25">write_bulk</a> (uint32_t offs, std::vector&lt; uint8_t &gt; data)</td></tr>
+<tr class="separator:a5b8e830656fa56ce4611cdc9ab0eda25 inherit pro_methods_classudmaio_1_1_uio_if"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cbf37ba60ea1ecf70034eeb7e953494 inherit pro_methods_classudmaio_1_1_uio_if"><td class="memTemplParams" colspan="2">template&lt;typename C &gt; </td></tr>
+<tr class="memitem:a4cbf37ba60ea1ecf70034eeb7e953494 inherit pro_methods_classudmaio_1_1_uio_if"><td class="memTemplItemLeft" align="right" valign="top">C&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classudmaio_1_1_uio_if.html#a4cbf37ba60ea1ecf70034eeb7e953494">_rd_reg</a> (uint32_t offs) const</td></tr>
+<tr class="separator:a4cbf37ba60ea1ecf70034eeb7e953494 inherit pro_methods_classudmaio_1_1_uio_if"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8ff2dcd394a824dab2a04e2aa275094 inherit pro_methods_classudmaio_1_1_uio_if"><td class="memTemplParams" colspan="2">template&lt;typename C &gt; </td></tr>
+<tr class="memitem:aa8ff2dcd394a824dab2a04e2aa275094 inherit pro_methods_classudmaio_1_1_uio_if"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classudmaio_1_1_uio_if.html#aa8ff2dcd394a824dab2a04e2aa275094">_wr_reg</a> (uint32_t offs, const C &amp;value)</td></tr>
+<tr class="separator:aa8ff2dcd394a824dab2a04e2aa275094 inherit pro_methods_classudmaio_1_1_uio_if"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6756aeb5ca3c013d0c4be22e3d573963 inherit pro_methods_classudmaio_1_1_uio_if"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classudmaio_1_1_uio_if.html#a6756aeb5ca3c013d0c4be22e3d573963">arm_interrupt</a> ()</td></tr>
 <tr class="separator:a6756aeb5ca3c013d0c4be22e3d573963 inherit pro_methods_classudmaio_1_1_uio_if"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7035fb19bfd190fe5b482d27cc528b0a inherit pro_methods_classudmaio_1_1_uio_if"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classudmaio_1_1_uio_if.html#a7035fb19bfd190fe5b482d27cc528b0a">wait_for_interrupt</a> ()</td></tr>
 <tr class="separator:a7035fb19bfd190fe5b482d27cc528b0a inherit pro_methods_classudmaio_1_1_uio_if"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aebd339271c546d44575671edc7f7daf9 inherit pro_methods_classudmaio_1_1_uio_if"><td class="memItemLeft" align="right" valign="top">virtual const std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classudmaio_1_1_uio_if.html#aebd339271c546d44575671edc7f7daf9">_log_name</a> () const =0</td></tr>
-<tr class="separator:aebd339271c546d44575671edc7f7daf9 inherit pro_methods_classudmaio_1_1_uio_if"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_static_methods_classudmaio_1_1_uio_if"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_classudmaio_1_1_uio_if')"><img src="closed.png" alt="-"/>&#160;Static Protected Member Functions inherited from <a class="el" href="classudmaio_1_1_uio_if.html">udmaio::UioIf</a></td></tr>
+<tr class="memitem:a4f047f030c4363d46877dddf3d93478f inherit pro_static_methods_classudmaio_1_1_uio_if"><td class="memTemplParams" colspan="2">template&lt;typename C , typename  = std::enable_if_t&lt;(sizeof(C) == 4)&gt;&gt; </td></tr>
+<tr class="memitem:a4f047f030c4363d46877dddf3d93478f inherit pro_static_methods_classudmaio_1_1_uio_if"><td class="memTemplItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classudmaio_1_1_uio_if.html#a4f047f030c4363d46877dddf3d93478f">reg_to_raw</a> (C data)</td></tr>
+<tr class="separator:a4f047f030c4363d46877dddf3d93478f inherit pro_static_methods_classudmaio_1_1_uio_if"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b1e22f2824346e4b87fbf884de554eb inherit pro_static_methods_classudmaio_1_1_uio_if"><td class="memTemplParams" colspan="2">template&lt;typename C , typename  = std::enable_if_t&lt;(sizeof(C) == 8)&gt;&gt; </td></tr>
+<tr class="memitem:a3b1e22f2824346e4b87fbf884de554eb inherit pro_static_methods_classudmaio_1_1_uio_if"><td class="memTemplItemLeft" align="right" valign="top">static uint64_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classudmaio_1_1_uio_if.html#a3b1e22f2824346e4b87fbf884de554eb">reg_to_raw</a> (C data)</td></tr>
+<tr class="separator:a3b1e22f2824346e4b87fbf884de554eb inherit pro_static_methods_classudmaio_1_1_uio_if"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classudmaio_1_1_uio_if"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classudmaio_1_1_uio_if')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classudmaio_1_1_uio_if.html">udmaio::UioIf</a></td></tr>
-<tr class="memitem:a2a9abc749581164881422f771d81e77c inherit pro_attribs_classudmaio_1_1_uio_if"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classudmaio_1_1_uio_if.html#a2a9abc749581164881422f771d81e77c">_fd</a></td></tr>
-<tr class="separator:a2a9abc749581164881422f771d81e77c inherit pro_attribs_classudmaio_1_1_uio_if"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb95a4e415ecce2ecf99bfd8baebc670 inherit pro_attribs_classudmaio_1_1_uio_if"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classudmaio_1_1_uio_if.html#afb95a4e415ecce2ecf99bfd8baebc670">_fd_int</a></td></tr>
-<tr class="separator:afb95a4e415ecce2ecf99bfd8baebc670 inherit pro_attribs_classudmaio_1_1_uio_if"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9284f47ea82fd29ee29b3dfd9f465a73 inherit pro_attribs_classudmaio_1_1_uio_if"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classudmaio_1_1_uio_if.html#a9284f47ea82fd29ee29b3dfd9f465a73">_mem</a></td></tr>
-<tr class="separator:a9284f47ea82fd29ee29b3dfd9f465a73 inherit pro_attribs_classudmaio_1_1_uio_if"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b9d1b5562353fb0df19cc5c4c447458 inherit pro_attribs_classudmaio_1_1_uio_if"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structudmaio_1_1_uio_region.html">UioRegion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classudmaio_1_1_uio_if.html#a7b9d1b5562353fb0df19cc5c4c447458">_region</a></td></tr>
-<tr class="separator:a7b9d1b5562353fb0df19cc5c4c447458 inherit pro_attribs_classudmaio_1_1_uio_if"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a455a6630db927accf88d12d5b838d90f inherit pro_attribs_classudmaio_1_1_uio_if"><td class="memItemLeft" align="right" valign="top">boost::log::sources::severity_logger_mt&lt; blt::severity_level &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classudmaio_1_1_uio_if.html#a455a6630db927accf88d12d5b838d90f">_slg</a></td></tr>
-<tr class="separator:a455a6630db927accf88d12d5b838d90f inherit pro_attribs_classudmaio_1_1_uio_if"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1aa2dbf3f67dbcc0d77a8e346ca2339 inherit pro_attribs_classudmaio_1_1_uio_if"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classudmaio_1_1_uio_if.html#ac1aa2dbf3f67dbcc0d77a8e346ca2339">_skip_write_to_arm_int</a></td></tr>
-<tr class="separator:ac1aa2dbf3f67dbcc0d77a8e346ca2339 inherit pro_attribs_classudmaio_1_1_uio_if"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae470d46791fb4c678be3baf6a5095c7d inherit pro_attribs_classudmaio_1_1_uio_if"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceudmaio.html#af23be0f90a70f4eed1e08987bac4f32e">HwAccessorPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classudmaio_1_1_uio_if.html#ae470d46791fb4c678be3baf6a5095c7d">_hw</a></td></tr>
+<tr class="separator:ae470d46791fb4c678be3baf6a5095c7d inherit pro_attribs_classudmaio_1_1_uio_if"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61bd7bbfdf570dabd2077c9af2cddf3f inherit pro_attribs_classudmaio_1_1_uio_if"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceudmaio.html#a03d59114e0370739fb2989fedeed3ffc">boost_logger</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classudmaio_1_1_uio_if.html#a61bd7bbfdf570dabd2077c9af2cddf3f">_lg</a></td></tr>
+<tr class="separator:a61bd7bbfdf570dabd2077c9af2cddf3f inherit pro_attribs_classudmaio_1_1_uio_if"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_structaxi__dma_1_1block__template"><td colspan="2" onclick="javascript:toggleInherit('pub_types_structaxi__dma_1_1block__template')"><img src="closed.png" alt="-"/>&#160;Private Types inherited from <a class="el" href="structaxi__dma_1_1block__template.html">axi_dma::block_template&lt; R_array_acc, R_acc_arg &gt;</a></td></tr>
 <tr class="memitem:add283e1d75201d5ca7eae364538a2c4f inherit pub_types_structaxi__dma_1_1block__template"><td class="memTemplParams" colspan="2">template&lt;typename R , uint32_t O&gt; </td></tr>
 <tr class="memitem:add283e1d75201d5ca7eae364538a2c4f inherit pub_types_structaxi__dma_1_1block__template"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structaxi__dma_1_1block__template.html#add283e1d75201d5ca7eae364538a2c4f">R_acc</a> = R_array_acc&lt; R, O, 0, 0 &gt;</td></tr>
 <tr class="separator:add283e1d75201d5ca7eae364538a2c4f inherit pub_types_structaxi__dma_1_1block__template"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_structaxi__dma_1_1block__template"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_structaxi__dma_1_1block__template')"><img src="closed.png" alt="-"/>&#160;Private Member Functions inherited from <a class="el" href="structaxi__dma_1_1block__template.html">axi_dma::block_template&lt; R_array_acc, R_acc_arg &gt;</a></td></tr>
+<tr class="memitem:a053033be75233e467c81b80d073b21d5 inherit pub_methods_structaxi__dma_1_1block__template"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaxi__dma_1_1block__template.html#a053033be75233e467c81b80d073b21d5">block_template</a> (R_acc_arg arg)</td></tr>
+<tr class="separator:a053033be75233e467c81b80d073b21d5 inherit pub_methods_structaxi__dma_1_1block__template"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_structaxi__dma_1_1block__template"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_structaxi__dma_1_1block__template')"><img src="closed.png" alt="-"/>&#160;Private Attributes inherited from <a class="el" href="structaxi__dma_1_1block__template.html">axi_dma::block_template&lt; R_array_acc, R_acc_arg &gt;</a></td></tr>
 <tr class="memitem:a8050574a5c50711e6b8bcd7255e4f850 inherit pub_attribs_structaxi__dma_1_1block__template"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structaxi__dma_1_1block__template.html#add283e1d75201d5ca7eae364538a2c4f">R_acc</a>&lt; <a class="el" href="structaxi__dma_1_1mm2s__dmacr__t.html">mm2s_dmacr_t</a>, 0x0 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaxi__dma_1_1block__template.html#a8050574a5c50711e6b8bcd7255e4f850">mm2s_dmacr</a></td></tr>
 <tr class="memdesc:a8050574a5c50711e6b8bcd7255e4f850 inherit pub_attribs_structaxi__dma_1_1block__template"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register accessor for MM2S DMA Control Register.  <a href="structaxi__dma_1_1block__template.html#a8050574a5c50711e6b8bcd7255e4f850">More...</a><br /></td></tr>
@@ -260,8 +260,8 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Interface to AXI DMA Core. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="abd92168c528e68ee5ba19a88b0bbc271" name="abd92168c528e68ee5ba19a88b0bbc271"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd92168c528e68ee5ba19a88b0bbc271">&#9670;&#160;</a></span>UioAxiDmaIf()</h2>
+<a id="aff01d963fa85b9a234d2d90be6a63011" name="aff01d963fa85b9a234d2d90be6a63011"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff01d963fa85b9a234d2d90be6a63011">&#9670;&#160;</a></span>UioAxiDmaIf()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -272,7 +272,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">udmaio::UioAxiDmaIf::UioAxiDmaIf </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structudmaio_1_1_uio_device_info.html">UioDeviceInfo</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classudmaio_1_1_uio_device_location.html">UioDeviceLocation</a>&#160;</td>
           <td class="paramname"><em>dev_loc</em></td><td>)</td>
           <td></td>
         </tr>
@@ -287,33 +287,6 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a5627fbf50a2475b9288e0a464d5f1672" name="a5627fbf50a2475b9288e0a464d5f1672"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5627fbf50a2475b9288e0a464d5f1672">&#9670;&#160;</a></span>_log_name()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const std::string_view udmaio::UioAxiDmaIf::_log_name </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implements <a class="el" href="classudmaio_1_1_uio_if.html#aebd339271c546d44575671edc7f7daf9">udmaio::UioIf</a>.</p>
-
-</div>
-</div>
 <a id="a6756aeb5ca3c013d0c4be22e3d573963" name="a6756aeb5ca3c013d0c4be22e3d573963"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6756aeb5ca3c013d0c4be22e3d573963">&#9670;&#160;</a></span>arm_interrupt()</h2>
 
@@ -351,14 +324,14 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a12ad2b773b16b735c3fe9e8a24fe7139" name="a12ad2b773b16b735c3fe9e8a24fe7139"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a12ad2b773b16b735c3fe9e8a24fe7139">&#9670;&#160;</a></span>clear_interrupt()</h2>
+<a id="a1cbc86036333f77a67e79a1077618a56" name="a1cbc86036333f77a67e79a1077618a56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cbc86036333f77a67e79a1077618a56">&#9670;&#160;</a></span>clear_interrupt()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t udmaio::UioAxiDmaIf::clear_interrupt </td>
+          <td class="memname">std::tuple&lt; uint32_t, <a class="el" href="structaxi__dma_1_1s2mm__dmasr__t.html">axi_dma::s2mm_dmasr_t</a> &gt; udmaio::UioAxiDmaIf::clear_interrupt </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -370,23 +343,39 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a459c4de408c255f2e9927ad7a8dc3466" name="a459c4de408c255f2e9927ad7a8dc3466"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a459c4de408c255f2e9927ad7a8dc3466">&#9670;&#160;</a></span>get_fd_int()</h2>
+<a id="a02d6527c841f5766b616ce7f8f2f25c0" name="a02d6527c841f5766b616ce7f8f2f25c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02d6527c841f5766b616ce7f8f2f25c0">&#9670;&#160;</a></span>dump_status()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int udmaio::UioAxiDmaIf::get_fd_int </td>
+          <td class="memname">void udmaio::UioAxiDmaIf::dump_status </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get file descriptor of interrupt event file. </p>
-<dl class="section return"><dt>Returns</dt><dd>Event file descriptor </dd></dl>
+<p>Dump all status register flags in the log. </p>
+
+</div>
+</div>
+<a id="a52177a071c9c29e2ed57a6da50d12ebd" name="a52177a071c9c29e2ed57a6da50d12ebd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52177a071c9c29e2ed57a6da50d12ebd">&#9670;&#160;</a></span>get_curr_desc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uintptr_t udmaio::UioAxiDmaIf::get_curr_desc </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

@@ -19,68 +19,85 @@
 \DoxyCodeLine{15 \textcolor{preprocessor}{\#include <fstream>}}
 \DoxyCodeLine{16 \textcolor{preprocessor}{\#include <iostream>}}
 \DoxyCodeLine{17 \textcolor{preprocessor}{\#include <memory>}}
-\DoxyCodeLine{18 \textcolor{preprocessor}{\#include <string\_view>}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include <string>}}
 \DoxyCodeLine{19 }
 \DoxyCodeLine{20 \textcolor{preprocessor}{\#include <boost/core/noncopyable.hpp>}}
-\DoxyCodeLine{21 \textcolor{preprocessor}{\#include <boost/log/core/core.hpp>}}
-\DoxyCodeLine{22 \textcolor{preprocessor}{\#include <boost/log/expressions.hpp>}}
-\DoxyCodeLine{23 \textcolor{preprocessor}{\#include <boost/log/keywords/severity.hpp>}}
-\DoxyCodeLine{24 \textcolor{preprocessor}{\#include <boost/log/sources/logger.hpp>}}
-\DoxyCodeLine{25 \textcolor{preprocessor}{\#include <boost/log/trivial.hpp>}}
-\DoxyCodeLine{26 \textcolor{preprocessor}{\#include <fcntl.h>}}
-\DoxyCodeLine{27 \textcolor{preprocessor}{\#include <sys/mman.h>}}
-\DoxyCodeLine{28 \textcolor{preprocessor}{\#include <sys/stat.h>}}
-\DoxyCodeLine{29 \textcolor{preprocessor}{\#include <sys/types.h>}}
-\DoxyCodeLine{30 \textcolor{preprocessor}{\#include <unistd.h>}}
-\DoxyCodeLine{31 }
-\DoxyCodeLine{32 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_uio_config_8hpp}{udmaio/UioConfig.hpp}}"{}}}
-\DoxyCodeLine{33 \textcolor{preprocessor}{\#include <boost/log/sources/record\_ostream.hpp>}}
-\DoxyCodeLine{34 \textcolor{preprocessor}{\#include <boost/log/sources/severity\_logger.hpp>}}
-\DoxyCodeLine{35 }
-\DoxyCodeLine{36 \textcolor{keyword}{namespace }blt = boost::log::trivial;}
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#include <fcntl.h>}}
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#include <sys/mman.h>}}
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#include <sys/stat.h>}}
+\DoxyCodeLine{24 \textcolor{preprocessor}{\#include <sys/types.h>}}
+\DoxyCodeLine{25 \textcolor{preprocessor}{\#include <unistd.h>}}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_hw_accessor_8hpp}{udmaio/HwAccessor.hpp}}"{}}}
+\DoxyCodeLine{28 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_logging_8hpp}{udmaio/Logging.hpp}}"{}}}
+\DoxyCodeLine{29 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_uio_config_8hpp}{udmaio/UioConfig.hpp}}"{}}}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespaceudmaio}{udmaio}} \{}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{34 \textcolor{keyword}{class }\mbox{\hyperlink{classudmaio_1_1_uio_if}{UioIf}} : \textcolor{keyword}{private} boost::noncopyable \{}
+\DoxyCodeLine{35     \textcolor{keyword}{template} <\textcolor{keyword}{typename} C>}
+\DoxyCodeLine{36     \textcolor{keyword}{friend} \textcolor{keyword}{class }\mbox{\hyperlink{classudmaio_1_1_reg_accessor_base}{RegAccessorBase}};}
 \DoxyCodeLine{37 }
-\DoxyCodeLine{38 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespaceudmaio}{udmaio}} \{}
-\DoxyCodeLine{39 }
-\DoxyCodeLine{41 \textcolor{keyword}{class }\mbox{\hyperlink{classudmaio_1_1_uio_if}{UioIf}} : \textcolor{keyword}{private} boost::noncopyable \{}
-\DoxyCodeLine{42     \textcolor{keyword}{template} <\textcolor{keyword}{typename} C>}
-\DoxyCodeLine{43     \textcolor{keyword}{friend} \textcolor{keyword}{class }\mbox{\hyperlink{classudmaio_1_1_reg_accessor_base}{RegAccessorBase}};}
-\DoxyCodeLine{44 }
-\DoxyCodeLine{45   \textcolor{keyword}{public}:}
-\DoxyCodeLine{48     \mbox{\hyperlink{classudmaio_1_1_uio_if_a9eab72c96cad2df0a438ef2fcf685e2e}{UioIf}}(\mbox{\hyperlink{structudmaio_1_1_uio_device_info}{UioDeviceInfo}} dev);}
-\DoxyCodeLine{49 }
-\DoxyCodeLine{50     \textcolor{keyword}{virtual} \mbox{\hyperlink{classudmaio_1_1_uio_if_ac50743264269138365856bf6cf073273}{\string~UioIf}}();}
-\DoxyCodeLine{51 }
-\DoxyCodeLine{52   \textcolor{keyword}{protected}:}
-\DoxyCodeLine{53     \textcolor{keywordtype}{int} \mbox{\hyperlink{classudmaio_1_1_uio_if_a2a9abc749581164881422f771d81e77c}{\_fd}}, \mbox{\hyperlink{classudmaio_1_1_uio_if_afb95a4e415ecce2ecf99bfd8baebc670}{\_fd\_int}};}
-\DoxyCodeLine{54     \textcolor{keywordtype}{void}* \mbox{\hyperlink{classudmaio_1_1_uio_if_a9284f47ea82fd29ee29b3dfd9f465a73}{\_mem}};}
-\DoxyCodeLine{55     \mbox{\hyperlink{structudmaio_1_1_uio_region}{UioRegion}} \mbox{\hyperlink{classudmaio_1_1_uio_if_a7b9d1b5562353fb0df19cc5c4c447458}{\_region}};}
-\DoxyCodeLine{56     \textcolor{keyword}{mutable} boost::log::sources::severity\_logger\_mt<blt::severity\_level> \mbox{\hyperlink{classudmaio_1_1_uio_if_a455a6630db927accf88d12d5b838d90f}{\_slg}};}
-\DoxyCodeLine{57     \textcolor{keywordtype}{bool} \mbox{\hyperlink{classudmaio_1_1_uio_if_ac1aa2dbf3f67dbcc0d77a8e346ca2339}{\_skip\_write\_to\_arm\_int}};}
-\DoxyCodeLine{58 }
-\DoxyCodeLine{59     \textcolor{keyword}{volatile} uint32\_t* \mbox{\hyperlink{classudmaio_1_1_uio_if_a2522757cf427921bc727063a683ae367}{\_reg\_ptr32}}(uint32\_t offs)\textcolor{keyword}{ const }\{}
-\DoxyCodeLine{60         \textcolor{keywordflow}{return} \textcolor{keyword}{static\_cast<}\textcolor{keyword}{volatile }uint32\_t*\textcolor{keyword}{>}(\mbox{\hyperlink{classudmaio_1_1_uio_if_a9284f47ea82fd29ee29b3dfd9f465a73}{\_mem}}) + offs / 4;}
+\DoxyCodeLine{38   \textcolor{keyword}{public}:}
+\DoxyCodeLine{39     \mbox{\hyperlink{classudmaio_1_1_uio_if_a383688e40d0c62f7a46a8ab37e9de4ec}{UioIf}}(std::string name, \mbox{\hyperlink{classudmaio_1_1_uio_device_location}{UioDeviceLocation}} dev\_loc);}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41     \textcolor{keyword}{virtual} \mbox{\hyperlink{classudmaio_1_1_uio_if_ac50743264269138365856bf6cf073273}{\string~UioIf}}();}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{45     \textcolor{keywordtype}{int} \mbox{\hyperlink{classudmaio_1_1_uio_if_a2eaafeb3146b24ee7ef1e9978a9482cf}{get\_fd\_int}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47     \textcolor{keywordtype}{void} \mbox{\hyperlink{classudmaio_1_1_uio_if_ae46944a87f194f48d10157becb5624f1}{enable\_debug}}(\textcolor{keywordtype}{bool} enable);}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49   \textcolor{keyword}{protected}:}
+\DoxyCodeLine{50     \mbox{\hyperlink{namespaceudmaio_af23be0f90a70f4eed1e08987bac4f32e}{HwAccessorPtr}} \mbox{\hyperlink{classudmaio_1_1_uio_if_ae470d46791fb4c678be3baf6a5095c7d}{\_hw}};}
+\DoxyCodeLine{51     \mbox{\hyperlink{namespaceudmaio_a03d59114e0370739fb2989fedeed3ffc}{boost\_logger}}\& \mbox{\hyperlink{classudmaio_1_1_uio_if_a61bd7bbfdf570dabd2077c9af2cddf3f}{\_lg}};}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53     \textcolor{keyword}{template} <\textcolor{keyword}{typename} C, \textcolor{keyword}{typename} = std::enable\_if\_t<(sizeof(C) == 4)>>}
+\DoxyCodeLine{54     \textcolor{keyword}{static} uint32\_t \mbox{\hyperlink{classudmaio_1_1_uio_if_a4f047f030c4363d46877dddf3d93478f}{reg\_to\_raw}}(C data) \{}
+\DoxyCodeLine{55         \textcolor{keyword}{union }\{}
+\DoxyCodeLine{56             uint32\_t raw\_val;}
+\DoxyCodeLine{57             C cooked\_val;}
+\DoxyCodeLine{58         \} u;}
+\DoxyCodeLine{59         u.cooked\_val = data;}
+\DoxyCodeLine{60         \textcolor{keywordflow}{return} u.raw\_val;}
 \DoxyCodeLine{61     \}}
-\DoxyCodeLine{62     \textcolor{keyword}{volatile} uint64\_t* \mbox{\hyperlink{classudmaio_1_1_uio_if_a93c970c96f0bfa594eb4fd92d94e4ed3}{\_reg\_ptr64}}(uint32\_t offs)\textcolor{keyword}{ const }\{}
-\DoxyCodeLine{63         \textcolor{keywordflow}{return} \textcolor{keyword}{static\_cast<}\textcolor{keyword}{volatile }uint64\_t*\textcolor{keyword}{>}(\mbox{\hyperlink{classudmaio_1_1_uio_if_a9284f47ea82fd29ee29b3dfd9f465a73}{\_mem}}) + offs / 8;}
-\DoxyCodeLine{64     \}}
-\DoxyCodeLine{65 }
-\DoxyCodeLine{66     \textcolor{keyword}{template} <\textcolor{keyword}{typename} T>}
-\DoxyCodeLine{67     uint32\_t \mbox{\hyperlink{classudmaio_1_1_uio_if_a9d8ff52701b750c68bb891529470768f}{reg\_to\_raw}}(T data) \{}
-\DoxyCodeLine{68         \textcolor{keyword}{static\_assert}(\textcolor{keyword}{sizeof}(T) == 4, \textcolor{stringliteral}{"{}register must be 32 bit"{}});}
-\DoxyCodeLine{69         \textcolor{keywordflow}{return} *\textcolor{keyword}{reinterpret\_cast<}uint32\_t*\textcolor{keyword}{>}(\&data);}
-\DoxyCodeLine{70     \}}
-\DoxyCodeLine{71 }
-\DoxyCodeLine{72     uint32\_t \mbox{\hyperlink{classudmaio_1_1_uio_if_a9a7d60c6438b2d90e204bb5a456ed755}{\_rd32}}(uint32\_t offs) \textcolor{keyword}{const};}
-\DoxyCodeLine{73     uint64\_t \mbox{\hyperlink{classudmaio_1_1_uio_if_a9a0b7afd8ae6ca5e4a332e6a43b64ebb}{\_rd64}}(uint32\_t offs) \textcolor{keyword}{const};}
-\DoxyCodeLine{74     \textcolor{keywordtype}{void} \mbox{\hyperlink{classudmaio_1_1_uio_if_a493e161ddcaa28c256f075f45e687391}{\_wr32}}(uint32\_t offs, uint32\_t data);}
-\DoxyCodeLine{75     \textcolor{keywordtype}{void} \mbox{\hyperlink{classudmaio_1_1_uio_if_a0287ff2c15a31b97b78c57e4eeb802e8}{\_wr64}}(uint32\_t offs, uint64\_t data);}
-\DoxyCodeLine{76 }
-\DoxyCodeLine{77     \textcolor{keywordtype}{void} \mbox{\hyperlink{classudmaio_1_1_uio_if_a6756aeb5ca3c013d0c4be22e3d573963}{arm\_interrupt}}();}
-\DoxyCodeLine{78     uint32\_t \mbox{\hyperlink{classudmaio_1_1_uio_if_a7035fb19bfd190fe5b482d27cc528b0a}{wait\_for\_interrupt}}();}
-\DoxyCodeLine{79 }
-\DoxyCodeLine{80     \textcolor{keyword}{virtual} \textcolor{keyword}{const} std::string\_view \mbox{\hyperlink{classudmaio_1_1_uio_if_aebd339271c546d44575671edc7f7daf9}{\_log\_name}}() \textcolor{keyword}{const} = 0;}
-\DoxyCodeLine{81 \};}
-\DoxyCodeLine{82 }
-\DoxyCodeLine{83 \}  \textcolor{comment}{// namespace udmaio}}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{63     \textcolor{keyword}{template} <\textcolor{keyword}{typename} C, \textcolor{keyword}{typename} = std::enable\_if\_t<(sizeof(C) == 8)>>}
+\DoxyCodeLine{64     \textcolor{keyword}{static} uint64\_t \mbox{\hyperlink{classudmaio_1_1_uio_if_a3b1e22f2824346e4b87fbf884de554eb}{reg\_to\_raw}}(C data) \{}
+\DoxyCodeLine{65         \textcolor{keyword}{union }\{}
+\DoxyCodeLine{66             uint64\_t raw\_val;}
+\DoxyCodeLine{67             C cooked\_val;}
+\DoxyCodeLine{68         \} u;}
+\DoxyCodeLine{69         u.cooked\_val = data;}
+\DoxyCodeLine{70         \textcolor{keywordflow}{return} u.raw\_val;}
+\DoxyCodeLine{71     \}}
+\DoxyCodeLine{72 }
+\DoxyCodeLine{73     \textcolor{keyword}{inline} uint32\_t \mbox{\hyperlink{classudmaio_1_1_uio_if_a9a7d60c6438b2d90e204bb5a456ed755}{\_rd32}}(uint32\_t offs)\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classudmaio_1_1_uio_if_ae470d46791fb4c678be3baf6a5095c7d}{\_hw}}-\/>\_rd32(offs); \}}
+\DoxyCodeLine{74     \textcolor{keyword}{inline} uint64\_t \mbox{\hyperlink{classudmaio_1_1_uio_if_a9a0b7afd8ae6ca5e4a332e6a43b64ebb}{\_rd64}}(uint32\_t offs)\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classudmaio_1_1_uio_if_ae470d46791fb4c678be3baf6a5095c7d}{\_hw}}-\/>\_rd64(offs); \}}
+\DoxyCodeLine{75     \textcolor{keyword}{inline} \textcolor{keywordtype}{void} \mbox{\hyperlink{classudmaio_1_1_uio_if_a493e161ddcaa28c256f075f45e687391}{\_wr32}}(uint32\_t offs, uint32\_t data) \{ \mbox{\hyperlink{classudmaio_1_1_uio_if_ae470d46791fb4c678be3baf6a5095c7d}{\_hw}}-\/>\_wr32(offs, data); \}}
+\DoxyCodeLine{76     \textcolor{keyword}{inline} \textcolor{keywordtype}{void} \mbox{\hyperlink{classudmaio_1_1_uio_if_a0287ff2c15a31b97b78c57e4eeb802e8}{\_wr64}}(uint32\_t offs, uint64\_t data) \{ \mbox{\hyperlink{classudmaio_1_1_uio_if_ae470d46791fb4c678be3baf6a5095c7d}{\_hw}}-\/>\_wr64(offs, data); \}}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{78     std::vector<uint8\_t> \mbox{\hyperlink{classudmaio_1_1_uio_if_a5f8fc60947d75be15927a2310658cb03}{read\_bulk}}(uint32\_t offs, uint32\_t size) \{}
+\DoxyCodeLine{79         \textcolor{keywordflow}{return} \mbox{\hyperlink{classudmaio_1_1_uio_if_ae470d46791fb4c678be3baf6a5095c7d}{\_hw}}-\/>read\_bulk(offs, size);}
+\DoxyCodeLine{80     \}}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{82     \textcolor{keywordtype}{void} \mbox{\hyperlink{classudmaio_1_1_uio_if_a5b8e830656fa56ce4611cdc9ab0eda25}{write\_bulk}}(uint32\_t offs, std::vector<uint8\_t> data) \{}
+\DoxyCodeLine{83         \textcolor{keywordflow}{return} \mbox{\hyperlink{classudmaio_1_1_uio_if_ae470d46791fb4c678be3baf6a5095c7d}{\_hw}}-\/>write\_bulk(offs, data);}
+\DoxyCodeLine{84     \}}
+\DoxyCodeLine{85 }
+\DoxyCodeLine{86     \textcolor{keyword}{template} <\textcolor{keyword}{typename} C>}
+\DoxyCodeLine{87     C \mbox{\hyperlink{classudmaio_1_1_uio_if_a4cbf37ba60ea1ecf70034eeb7e953494}{\_rd\_reg}}(uint32\_t offs)\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{88         \textcolor{keywordflow}{return} \mbox{\hyperlink{classudmaio_1_1_uio_if_ae470d46791fb4c678be3baf6a5095c7d}{\_hw}}-\/>template \_rd\_reg<C>(offs);}
+\DoxyCodeLine{89     \}}
+\DoxyCodeLine{90 }
+\DoxyCodeLine{91     \textcolor{keyword}{template} <\textcolor{keyword}{typename} C>}
+\DoxyCodeLine{92     \textcolor{keywordtype}{void} \mbox{\hyperlink{classudmaio_1_1_uio_if_aa8ff2dcd394a824dab2a04e2aa275094}{\_wr\_reg}}(uint32\_t offs, \textcolor{keyword}{const} C\& value) \{}
+\DoxyCodeLine{93         \mbox{\hyperlink{classudmaio_1_1_uio_if_ae470d46791fb4c678be3baf6a5095c7d}{\_hw}}-\/>template \_wr\_reg<C>(offs, value);}
+\DoxyCodeLine{94     \}}
+\DoxyCodeLine{95 }
+\DoxyCodeLine{96     \textcolor{keywordtype}{void} \mbox{\hyperlink{classudmaio_1_1_uio_if_a6756aeb5ca3c013d0c4be22e3d573963}{arm\_interrupt}}();}
+\DoxyCodeLine{97     uint32\_t \mbox{\hyperlink{classudmaio_1_1_uio_if_a7035fb19bfd190fe5b482d27cc528b0a}{wait\_for\_interrupt}}();}
+\DoxyCodeLine{98 \};}
+\DoxyCodeLine{99 }
+\DoxyCodeLine{100 \}  \textcolor{comment}{// namespace udmaio}}
 
 \end{DoxyCode}

@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['keyhole_0',['keyhole',['../structaxi__dma_1_1mm2s__dmacr__t.html#ab8fb8ec78e43db3206bfb7cb0613fecf',1,'axi_dma::mm2s_dmacr_t::keyhole()'],['../structaxi__dma_1_1s2mm__dmacr__t.html#aeb537dee5d92f7068cf201638cf7a656',1,'axi_dma::s2mm_dmacr_t::keyhole()']]]
+  ['halted_0',['halted',['../structaxi__dma_1_1mm2s__dmasr__t.html#adb593de3d6cecf47f9bd5f0c85e77d3a',1,'axi_dma::mm2s_dmasr_t::halted()'],['../structaxi__dma_1_1s2mm__dmasr__t.html#a5c72c3b8ed0a45272709e9e40d9565ee',1,'axi_dma::s2mm_dmasr_t::halted()'],['../structaxi__vdma_1_1mm2s__vdmasr__t.html#ae25b36f4cbd8ef6360a85fe7eeb78c06',1,'axi_vdma::mm2s_vdmasr_t::halted()'],['../structaxi__vdma_1_1s2mm__vdmasr__t.html#ab6764980ab2d221e1e68312218494600',1,'axi_vdma::s2mm_vdmasr_t::halted()']]],
+  ['height_1',['height',['../structudmaio_1_1_frame_format_1_1dim__t.html#acfbd14cfa1af5b020e8f193326dd91c0',1,'udmaio::FrameFormat::dim_t']]],
+  ['horizontal_5fsize_2',['horizontal_size',['../structaxi__vdma_1_1mm2s__hsize__t.html#a9e35a3fd0308d983bfa236e483c2b3b5',1,'axi_vdma::mm2s_hsize_t::horizontal_size()'],['../structaxi__vdma_1_1s2mm__hsize__t.html#aec5560933227dd6b7a3857e97f357750',1,'axi_vdma::s2mm_hsize_t::horizontal_size()']]]
 ];
